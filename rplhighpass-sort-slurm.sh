@@ -9,8 +9,8 @@
 #SBATCH -J "rplhighpass-sort"   # job name
 
 ## /SBATCH -p general # partition (queue)
-#SBATCH -o rplhighpass-sort.%N.%j.out # STDOUT
-#SBATCH -e rplhighpass-sort.%N.%j.err # STDERR
+#SBATCH -o rplhighpass-sort-slurm.%N.%j.out # STDOUT
+#SBATCH -e rplhighpass-sort-slurm.%N.%j.err # STDERR
 
 /data/miniconda3/bin/conda init
 source ~/.bashrc
